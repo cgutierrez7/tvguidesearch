@@ -1,0 +1,10 @@
+<form>
+  <mat-form-field>
+    <mat-icon matPrefix>search</mat-icon>
+    <input matInput type="text" placeholder="Type show name..." [formControl]="search"/>
+<!--    <mat-hint>Type in show name</mat-hint>   -->
+    <mat-error *ngIf="search.invalid">
+      Type more than 1 character
+    </mat-error>
+  </mat-form-field>
+</form>
